@@ -1,0 +1,41 @@
+@font-face {
+  font-family: lato;
+  font-weight: 200;
+  src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: lato;
+  font-weight: 400;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+@font-face {
+  font-family: staatliches;
+  font-weight: 400;
+  src: url(../fonts/Staatliches-Regular.ttf);
+}
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:visited {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=_base.css.map*/

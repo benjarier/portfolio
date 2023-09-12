@@ -1,0 +1,248 @@
+@font-face {
+  font-family: lato;
+  font-weight: 200;
+  src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: lato;
+  font-weight: 400;
+  src: url(../fonts/Lato-Medium.ttf);
+}
+@font-face {
+  font-family: staatliches;
+  font-weight: 400;
+  src: url(../fonts/Staatliches-Regular.ttf);
+}
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:visited {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+body {
+  padding: 24px 16px;
+  background: #131313;
+  color: #acacac;
+  font-family: lato;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+}
+@media screen and (min-width: 550px) {
+  body {
+    padding: 24px 32px;
+  }
+}
+
+h1, h3, h4 {
+  font-family: staatliches;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 32px;
+}
+h1 strong {
+  color: #E6E6E6;
+}
+h1 a {
+  color: #777777 !important;
+  transition: all 0.2s;
+}
+h1 a:hover {
+  transition: all 0.2s;
+  color: #acacac !important;
+}
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 3.16rem;
+    line-height: 48px;
+  }
+}
+
+h2, h3, h4 {
+  font-size: 1.1428rem;
+  line-height: 24px;
+  color: #E6E6E6;
+}
+
+h2, h4 {
+  margin-top: 24px;
+}
+
+h3, h4 {
+  margin-top: 24px;
+  font-size: 1.43rem;
+  line-height: 24px;
+}
+
+p {
+  margin-top: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.langChoice {
+  margin-left: 16px;
+  font-size: 1.43rem;
+  line-height: 24px;
+  flex: 55px 0 0;
+}
+
+.langChoice_el {
+  font-family: staatliches;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #7f7f7f !important;
+}
+
+.langChoice_el.selected {
+  color: #E6E6E6 !important;
+}
+
+.vimeo-wrapper {
+  margin-top: 16px;
+  width: 100%;
+  padding-top: calc((100% - 80px) * 0.565);
+  position: relative;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 10px -3px;
+}
+
+.vimeo-wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.previewImg {
+  margin-top: 16px;
+  width: 100%;
+  position: relative;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 10px -3px;
+}
+
+.textContainer {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 1200px;
+}
+.text a {
+  color: #38d6db !important;
+  transition: all 0.2s;
+}
+.text a:hover {
+  transition: all 0.2s;
+  filter: saturate(75%);
+}
+@media screen and (min-width: 990px) {
+  .text {
+    flex-direction: row;
+  }
+}
+
+.left, .right {
+  width: 100%;
+}
+@media screen and (min-width: 990px) {
+  .left, .right {
+    width: calc(50% - 20px);
+  }
+}
+
+.moreInfo {
+  display: flex;
+}
+.moreInfo li {
+  margin-top: 4px;
+}
+
+.partners {
+  margin-left: 40px;
+}
+
+.photoSection {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photoSection:not(:first-child) {
+  margin-top: 40px;
+}
+
+.img_1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: calc((100vw - 80px) * 3 / 4);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 10px -3px;
+}
+
+.img_2 {
+  display: block;
+  width: 100%;
+  height: calc((100vw - 80px) * 3 / 4);
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 10px -3px;
+}
+.img_2:not(:first-child) {
+  margin-top: 40px;
+}
+@media screen and (min-width: 550px) {
+  .img_2 {
+    width: calc(50% - 20px);
+    height: calc((50vw - 60px) * 3 / 4);
+  }
+  .img_2:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=project.css.map*/
